@@ -41,11 +41,11 @@
                 <div class="col-lg-4">
                     <div class="card-box">
                         <h4 class="text-dark  header-title m-t-0 m-b-30">
-                            Traceroute
+                            Traceroute <small id="traceroute_to"></small>
                         </h4>
 
                         <div class="widget-chart text-center">
-                            <div class="tika_table">
+                            <div id="traceroute" class="tika_table">
                                 <table class="table table-responsive">
                                     <thead>
                                     <tr>
@@ -54,59 +54,7 @@
                                         <th>Usage</th>
                                     </tr>
                                     </thead>
-                                    <tbody class="text-left">
-                                    <tr>
-                                        <th scope="row">1</th>
-                                        <th>192.168.1.1</th>
-                                        <td>
-                                            <div class="progress">
-                                                <div class="progress-bar
-                                                progress-bar-success"
-                                                     role="progressbar"
-                                                     aria-valuenow="18%"
-                                                     aria-valuemin="0"
-                                                     aria-valuemax="100"
-                                                     style="width:18%">
-                                                    18%
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">2</th>
-                                        <th>93.45.1.100</th>
-                                        <td>
-                                            <div class="progress">
-                                                <div class="progress-bar
-                                                progress-bar-warning"
-                                                     role="progressbar"
-                                                     aria-valuenow="40%"
-                                                     aria-valuemin="0"
-                                                     aria-valuemax="100"
-                                                     style="width:40%">
-                                                    40%
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">3</th>
-                                        <th>2.110.43.9</th>
-                                        <td>
-                                            <div class="progress">
-                                                <div class="progress-bar
-                                                progress-bar-danger"
-                                                     role="progressbar"
-                                                     aria-valuenow="90%"
-                                                     aria-valuemin="0"
-                                                     aria-valuemax="100"
-                                                     style="width:90%">
-                                                    90%
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    </tbody>
+                                    <tbody class="text-left"></tbody>
                                 </table>
                             </div>
                         </div>

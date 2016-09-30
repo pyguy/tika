@@ -145,13 +145,13 @@ if(! function_exists('getDNShost')){
      * Get dnf nameserver-s
      * @return array
      */
-    function getDNShost(){
+    function getDNShost($index = 0){
         $datas = 'N.A';
 
         if(exec('cat /etc/resolv.conf | awk \'/a/ { print $all }\' ' , $output))
             $datas = $output[1];
 
-        return explode(' ',$datas);
+        return explode(' ',$datas)[$index];
     }
 }
 

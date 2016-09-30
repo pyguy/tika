@@ -10,7 +10,7 @@ return [
     "ping_hosts" => [
         "google.com"
     ],
-    
+
     "traceroute_hosts" => [
         "google.com"
     ],
@@ -37,7 +37,7 @@ return [
 
             [
                 "name" => "DNS",
-                "host" => getDNShost()[0],
+                "host" => getDNShost(),
                 "port" => 22,
                 "protocol" => "tcp"
             ]

@@ -31,6 +31,40 @@ function checkServices() {
     }, 'json');
 }
 
+function checkTraceroute() {
+
+    var module = 'traceroute';
+
+    $.get('check/' + module , function(data) {
+
+        var $box = $('#' + module + ' tbody');
+        $box.empty();
+
+        for (var line in data) {
+
+            $('#traceroute_to').html(data[0].traceroute_to);
+
+            var i = 1;
+
+            for(var index in data[line]['hosts']){
+
+                var html = '<tr>';
+
+                html += '<th scope="row">' + i + '</th>';
+                html += '<th>' + data[line]['hosts'][index].ipAddress + '</th>';
+                html += '<th>' + data[line]['hosts'][index].country + '</th>';
+                html += '</tr>';
+
+                i++;
+
+                $box.append(html);
+            }
+
+        }
+
+    }, 'json');
+}
+
 function checkNetworkUsage() {
 
     var module = 'network';
@@ -70,7 +104,9 @@ function getDatas() {
 }
 
 $(document).ready(function () {
-    getDatas()
+    getDatas();
+    // get traceroute datas
+    checkTraceroute();
 });
 
 // get datas each 8 per second
