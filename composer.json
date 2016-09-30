@@ -1,0 +1,35 @@
+{
+  "name": "lemax/lemax",
+  "description": "The Lemax php framework",
+  "keywords": ["framework", "lemax" , "php"],
+  "license": "MIT",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Alireza Josheghani",
+      "email": "josheghani.dev@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.5",
+    "lemax/blade": "1.0",
+    "lemax/router": "1.1",
+    "lemax/foundation": "dev-master",
+    "guzzlehttp/guzzle": "^6.2"
+  },
+  "require-dev": {
+    "symfony/console": "*",
+    "lemax/console": "dev-master"
+  },
+  "autoload":{
+    "psr-4": {
+      "App\\": "app/"
+    },
+    "files": [
+      "app/helpers.php"
+    ],
+    "classmap":[
+      "database/"
+    ]
+  }
+}

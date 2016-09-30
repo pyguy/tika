@@ -1,0 +1,7 @@
+vendor
+npm-debug.log
+node_modules
+tika_project.zip
+composer.lock
+.idea
+.git
