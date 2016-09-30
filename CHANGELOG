@@ -1,0 +1,6 @@
+Tika Project CHANGELOG file
+
+v 0.0.1
+  - Fix Markdown file
+  - Add traceroute to project
+  - Add .htaccess file for routing
